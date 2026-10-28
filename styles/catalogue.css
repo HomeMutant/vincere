@@ -1,0 +1,93 @@
+/* ---------- Page header ---------- */
+.catalogue { max-width: 1440px; margin: auto; padding: 70px 7% 125px; }
+.section-head { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 42px; }
+.section-head > p { max-width: 315px; color: #a99ba9; font-size: 13px; line-height: 1.9; }
+.catalogue-header { align-items: center; }
+.catalogue-header p { font-size: 13px; color: #aa9cab; }
+.price-from { border-left: 1px solid var(--line); padding: 0 0 0 30px; font-size: 9px; letter-spacing: 2px; color: #aa91a8; display: flex; flex-direction: column; gap: 6px; }
+.price-from strong { font: 500 43px 'Cormorant Garamond', serif; letter-spacing: -1px; color: #e8c5e1; }
+.price-from span { font-size: 9px; }
+
+/* ---------- Jump bar + filters (sticky) ---------- */
+.catalogue-tools { position: sticky; top: 0; z-index: 15; background: var(--bg); display: flex; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--line); align-items: end; }
+.tabs { display: flex; gap: 30px; }
+.tabs a { border-bottom: 2px solid transparent; padding: 18px 0; color: #9d8c9d; font-size: 12px; white-space: nowrap; transition: color .2s, border-color .2s; }
+.tabs a:hover { color: #f1d8eb; border-color: #d7a8d0; }
+.tabs span { font-size: 10px; color: #997e97; margin-left: 4px; }
+.filters { display: flex; gap: 10px; padding-bottom: 10px; }
+.search, .select-wrap { height: 39px; display: flex; align-items: center; gap: 10px; border: 1px solid var(--line); padding: 0 12px; color: #af91ad; background: #1b1420; }
+.search input { width: 170px; outline: none; border: none; background: none; color: #fff; font-size: 11px; }
+.search input::placeholder { color: #847585; }
+.select-wrap select { appearance: none; border: 0; outline: 0; background: transparent; color: #d6c4d5; font-size: 11px; min-width: 91px; cursor: pointer; }
+.select-wrap option { background: #201725; }
+.result-count { font-size: 9px; color: #947d92; letter-spacing: 2px; margin: 25px 0 0; }
+
+/* ---------- For him / For her sections ---------- */
+.collection { padding-top: 50px; scroll-margin-top: 60px; }
+.collection-head { margin-bottom: 28px; }
+.collection-head h2 { font-size: clamp(38px, 4vw, 56px); line-height: 1.05; letter-spacing: -1px; margin: 14px 0 0; }
+
+/* ---------- Product cards ---------- */
+.product-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
+.product-card { position: relative; min-width: 0; }
+.heart-btn { position: absolute; z-index: 3; right: 13px; top: 13px; border: 1px solid #f7d5eb20; background: #180f1b77; width: 37px; height: 37px; border-radius: 50%; display: grid; place-items: center; color: #e8c6dc; }
+.product-visual { width: 100%; height: 260px; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #d4a8d220; background: radial-gradient(circle at 50% 45%, #5f3a5b, #2b1c30 43%, #1b1422 82%); }
+.product-visual .bottle { margin-top: 38px; transform: rotate(-5deg) scale(.53); }
+.product-visual:hover .bottle { transform: rotate(0deg) scale(.59); }
+.product-visual .visual-sheen { position: absolute; inset: 0; background: linear-gradient(115deg, transparent 20%, #ffffff0a 45%, transparent 65%); }
+.product-meta { margin-top: 20px; color: #ca94c4; font-size: 9px; letter-spacing: 1.8px; }
+.product-card h3 { font: 500 25px 'Cormorant Garamond', serif; margin: 9px 0 3px; min-height: 29px; }
+.product-card p { font-size: 11px; color: #928394; min-height: 27px; margin: 0; }
+.product-bottom { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; border-top: 1px solid var(--line); padding-top: 15px; }
+.product-bottom > div { display: flex; align-items: baseline; gap: 8px; }
+.product-bottom > div span { font-size: 9px; color: #91808f; letter-spacing: 1px; }
+.product-bottom strong { font-size: 18px; color: #f0c9e7; font-weight: 500; }
+.view-btn { display: flex; gap: 7px; align-items: center; background: none; border: none; color: #d6b3d2; font-size: 11px; padding: 7px 0; }
+
+/* Background tint per bottle colour (also used by the details modal/page) */
+.visual-violet { background: radial-gradient(circle at 50% 43%, #444469, #242039 47%, #17141f 84%); }
+.visual-gold { background: radial-gradient(circle at 50% 43%, #6e533b, #302422 47%, #1b151a 84%); }
+.visual-ruby { background: radial-gradient(circle at 50% 43%, #69404c, #301e2b 47%, #1a131c 84%); }
+.visual-smoke { background: radial-gradient(circle at 50% 43%, #48404a, #29222b 47%, #17131b 84%); }
+
+/* ---------- Empty states (no results / nothing saved) ---------- */
+.empty { text-align: center; padding: 70px 20px; color: #ad9aac; }
+.empty h3 { font: 36px 'Cormorant Garamond', serif; color: #f1deee; }
+.empty button, .empty a { display: inline-block; border: 1px solid var(--line); background: none; padding: 10px 20px; }
+
+@media (max-width: 1050px) {
+  .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .catalogue-tools { align-items: stretch; flex-direction: column; }
+  .filters { justify-content: flex-end; }
+}
+
+@media (max-width: 700px) {
+  .catalogue { padding: 75px 6%; }
+  .section-head { display: block; margin-bottom: 28px; }
+  .section-head > p { margin-top: 20px; }
+  .price-from { margin-top: 23px; padding-left: 20px; }
+  .catalogue-tools { gap: 12px; }
+  .tabs { gap: 20px; }
+  .tabs a { font-size: 11px; }
+  .filters { justify-content: stretch; }
+  .search { flex: 1; }
+  .search input { width: 100%; }
+  .select-wrap { max-width: 155px; }
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 12px; }
+  .product-visual { height: 212px; }
+  .product-visual .bottle { transform: rotate(-5deg) scale(.43); }
+  .product-visual:hover .bottle { transform: rotate(0) scale(.46); }
+  .product-card h3 { font-size: 21px; }
+  .product-card p { font-size: 10px; line-height: 1.6; min-height: 35px; }
+  .product-meta { font-size: 8px; }
+  .product-bottom strong { font-size: 16px; }
+  .view-btn { font-size: 10px; }
+}
+
+@media (max-width: 380px) {
+  .tabs { gap: 12px; }
+  .select-wrap { max-width: 125px; padding: 0 7px; }
+  .select-wrap select { min-width: 65px; }
+  .product-visual { height: 180px; }
+  .product-visual .bottle { transform: rotate(-5deg) scale(.38); }
+}

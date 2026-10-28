@@ -1,0 +1,21 @@
+/* Decorative, CSS-rendered brand bottle */
+.bottle { position: relative; width: 234px; height: 440px; z-index: 2; filter: drop-shadow(20px 30px 28px #0009); transform: rotate(-6deg); transition: transform .4s; }
+.bottle-cap { position: absolute; left: 77px; top: 3px; width: 82px; height: 88px; z-index: 5; border-radius: 9px 9px 4px 4px; background: linear-gradient(90deg, #080509, #392638 22%, #100c15 49%, #53334a 75%, #080609); border: 1px solid #5c4457; box-shadow: inset 5px 0 9px #ffffff12, 8px 8px 15px #0008; }
+.bottle-cap:after { content: ''; position: absolute; inset: 7px 8px; border: 1px solid #e8b0d215; border-radius: 4px; }
+.bottle-neck { position: absolute; top: 88px; left: 84px; width: 68px; height: 28px; background: linear-gradient(90deg, #4b3047, #ab78a0, #2a162b); border: 2px solid #e6b9e655; }
+.bottle-glass { position: absolute; top: 109px; left: 9px; width: 218px; height: 287px; border: 3px solid #dfb9dd99; border-radius: 24px 24px 29px 29px; background: linear-gradient(103deg, #df89df2d 0%, #200e25 18%, #391738 46%, #0e0915 72%, #d38dd440 100%); box-shadow: inset 10px 0 17px #e7a7e73b, inset -10px 0 20px #f6c5ff1f, inset 0 -13px 15px #cd83c65c, 0 0 25px #ce76ca2d; overflow: hidden; }
+.bottle-glass:before { content: ''; position: absolute; inset: 8px 10px; border: 1px solid #e8aee425; border-radius: 17px; }
+.bottle-light { position: absolute; top: 0; left: 10px; width: 18px; height: 100%; background: linear-gradient(90deg, transparent, #ffe3f72b, transparent); transform: skew(-9deg); }
+.bottle-mark { position: absolute; top: 45px; left: 0; right: 0; text-align: center; font: italic 56px 'Cormorant Garamond', serif; color: #f8d5efb0; }
+.bottle-label { position: absolute; top: 128px; left: 0; right: 0; text-align: center; font: 600 21px 'Cormorant Garamond', serif; letter-spacing: 6px; color: #f6daef; }
+.bottle-line { position: absolute; top: 175px; width: 65px; height: 1px; background: #efd4e0a1; left: calc(50% - 32px); }
+.bottle-sub { position: absolute; top: 198px; left: 0; right: 0; text-align: center; font: 500 7px 'DM Sans', sans-serif; letter-spacing: 3px; color: #e2bcd7; }
+.bottle-shadow { position: absolute; bottom: 9px; left: 10px; width: 225px; height: 30px; border-radius: 50%; background: #bf75bd35; filter: blur(15px); }
+.bottle-small { transform: rotate(-5deg) scale(.52); transform-origin: center; }
+
+/* Glass colour variants */
+.bottle-plum .bottle-glass { background: linear-gradient(100deg, #d9a2d04d, #311534 32%, #130c1c 70%, #9b549d5a); }
+.bottle-violet .bottle-glass { background: linear-gradient(100deg, #abb2ff55, #25204d 38%, #111426 75%, #9689ef66); }
+.bottle-gold .bottle-glass { background: linear-gradient(100deg, #f4d79d6b, #624123 35%, #201518 72%, #e6bf7f66); }
+.bottle-ruby .bottle-glass { background: linear-gradient(100deg, #ef99ae63, #642b3b 35%, #250e22 75%, #e1779366); }
+.bottle-smoke .bottle-glass { background: linear-gradient(100deg, #c9bfd155, #303038 35%, #0e0c13 72%, #a99db966); }

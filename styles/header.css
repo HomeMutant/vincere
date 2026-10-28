@@ -1,0 +1,28 @@
+/* Three columns: links (left) | logo (centre) | saved (right) */
+.navbar { height: 90px; max-width: 1480px; margin: auto; padding: 0 6%; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; position: relative; z-index: 20; }
+.nav-left { display: flex; align-items: center; }
+.nav-actions { display: flex; align-items: center; justify-content: flex-end; }
+
+.brand, .footer-brand { font: 500 32px/.75 'Cormorant Garamond', serif; letter-spacing: 8px; }
+.brand span { display: block; text-align: center; font: 500 8px 'DM Sans', sans-serif; letter-spacing: 5px; margin-top: 12px; }
+
+.navlinks { display: flex; align-items: center; gap: 36px; }
+.navlinks a, .saved-link { padding: 12px 0; font-size: 12px; color: #d4c4d2; transition: color .2s; }
+.navlinks a:hover, .navlinks a.active, .saved-link:hover, .saved-link.active { color: #fff; }
+
+.saved-link { display: flex; align-items: center; gap: 10px; }
+.saved-icon { position: relative; display: flex; }
+.count { position: absolute; top: -6px; right: -8px; font-size: 9px; color: #fff; background: #ac7aaa; border-radius: 20px; padding: 1px 5px; }
+
+.icon-btn { border: 0; background: transparent; padding: 10px; position: relative; }
+.menu-toggle { display: none; }
+
+@media (max-width: 700px) {
+  .navbar { height: 75px; padding: 0 6%; }
+  .brand { font-size: 28px; }
+  .menu-toggle { display: block; margin-left: -10px; }
+  .saved-label { display: none; }
+  .navlinks { display: none; position: absolute; top: 75px; left: 0; right: 0; background: #1e1423; padding: 22px 7%; box-shadow: 0 30px 40px #0008; flex-direction: column; align-items: stretch; gap: 3px; }
+  .navlinks.open { display: flex; }
+  .navlinks a { font-size: 14px; padding: 13px 0; }
+}

@@ -1,0 +1,16 @@
+/* About page */
+.story { display: grid; grid-template-columns: 1fr 1fr; min-height: 620px; background: #19121e; }
+.story-art { background: radial-gradient(ellipse at center, #4b2d4d, #24182c 55%, #1c1523); position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.story-art .bottle { transform: rotate(8deg) scale(.85); }
+.story-round { position: absolute; width: 450px; height: 450px; border: 1px solid #e8b6e129; border-radius: 50%; box-shadow: 0 0 100px #a967ad27; }
+.story-art > span { position: absolute; bottom: 50px; font: 500 44px 'Cormorant Garamond', serif; letter-spacing: 12px; color: #e0b3e01b; }
+.story-copy { padding: 100px 12% 80px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+.story-copy h2 { font-size: clamp(59px, 6vw, 88px); margin-bottom: 21px; }
+.story-copy > p { font-size: 13px; line-height: 2.1; color: #b5a4b3; max-width: 400px; }
+
+@media (max-width: 700px) {
+  .story { grid-template-columns: 1fr; }
+  .story-art { min-height: 380px; }
+  .story-art .bottle { transform: rotate(8deg) scale(.67); }
+  .story-copy { padding: 75px 8%; }
+}
