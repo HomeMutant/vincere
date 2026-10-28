@@ -13,7 +13,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
-  title: { default: 'VINCERE | Find Your Signature Scent', template: '%s | VINCERE' },
+  title: { default: 'VINCERE', template: '%s | VINCERE' },
   description: 'Discover luxury-inspired fragrances from VINCERE. Premium scents, made personal.',
 };
 
