@@ -8,17 +8,13 @@
 .flower-two { left: 45%; bottom: -100px; font-size: 260px; opacity: .12; }
 
 .hero-copy { position: relative; z-index: 3; max-width: 610px; padding-bottom: 30px; }
-.hero h1 { font-size: clamp(76px, 8.2vw, 126px); line-height: .91; margin: 30px 0 27px; }
-.hero p { font-size: 15px; line-height: 1.9; color: #c2b4c2; max-width: 410px; margin: 0 0 34px; }
-.hero-caption { font-size: 9px; letter-spacing: 2.6px; color: #a78da6; margin-top: 62px; display: flex; align-items: center; gap: 17px; }
-.line { width: 42px; height: 1px; background: #ab79aa; }
+.hero h1 { font-size: clamp(76px, 8.2vw, 126px); line-height: .91; margin: 0 0 44px; }
 
 .hero-art { height: 610px; position: relative; display: flex; justify-content: center; align-items: center; }
 .art-halo { position: absolute; width: min(490px, 90%); aspect-ratio: 1; border: 1px solid rgba(218, 154, 212, .25); border-radius: 50%; box-shadow: 0 0 90px #aa67a929, inset 0 0 80px #a56ea51a; }
 .art-halo:before, .art-halo:after { content: ''; position: absolute; border: 1px solid rgba(218, 154, 212, .12); border-radius: 50%; inset: 24px; }
 .art-halo:after { inset: -28px; }
 .art-word { position: absolute; font: 500 440px 'Cormorant Garamond', serif; color: #d09acb09; transform: translateY(-16px); }
-.art-script { position: absolute; right: -15px; bottom: 74px; transform: rotate(-10deg); font: italic 33px 'Cormorant Garamond', serif; color: #e4b3e0; line-height: 1.05; text-align: center; }
 
 @media (max-width: 1050px) {
   .hero { min-height: 630px; padding: 20px 6%; }
@@ -27,14 +23,11 @@
 }
 
 @media (max-width: 700px) {
-  .hero { min-height: 850px; display: flex; flex-direction: column; justify-content: flex-start; padding: 65px 7% 20px; }
+  .hero { min-height: 720px; display: flex; flex-direction: column; justify-content: flex-start; padding: 65px 7% 20px; }
   .hero-copy { padding: 0; width: 100%; }
-  .hero h1 { font-size: clamp(66px, 14vw, 92px); margin: 25px 0 20px; }
-  .hero p { font-size: 13px; line-height: 1.8; max-width: 340px; }
-  .hero-caption { display: none; }
+  .hero h1 { font-size: clamp(66px, 14vw, 92px); margin: 0 0 30px; }
   .hero-art { height: 340px; flex: none; align-self: center; width: 100%; transform: scale(.68); margin-top: -8px; }
   .hero-art .bottle { transform: rotate(-6deg) scale(.8); }
-  .art-script { right: -20px; bottom: 10px; }
 }
 
 @media (max-width: 380px) {

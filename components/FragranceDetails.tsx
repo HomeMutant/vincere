@@ -24,12 +24,8 @@ export default function FragranceDetails({ perfume, heading: Heading = 'h2', sho
         <Bottle accent={perfume.accent} />
       </div>
       <div className="modal-details">
-        <div className="eyebrow">
-          ✦ {perfume.category.toUpperCase()} · {perfume.family.toUpperCase()}
-        </div>
         <Heading>{perfume.name}</Heading>
         <p>{perfume.note}</p>
-        <div className="modal-label">CHOOSE YOUR SIZE</div>
         <div className="size-options">
           {sizes.map((s) => (
             <button key={s.ml} className={size === s.ml ? 'selected' : ''} onClick={() => setSize(s.ml)}>
@@ -38,7 +34,6 @@ export default function FragranceDetails({ perfume, heading: Heading = 'h2', sho
           ))}
         </div>
         <div className="modal-price">
-          <span>YOUR SELECTION</span>
           <strong>RM{chosen.price}</strong>
         </div>
         <a
@@ -50,7 +45,7 @@ export default function FragranceDetails({ perfume, heading: Heading = 'h2', sho
           <MessageCircle size={18} /> Order on WhatsApp <ArrowRight size={17} />
         </a>
         <div className="modal-note">
-          <Check size={15} /> Enquiry only · No payment taken online
+          <Check size={15} /> Enquiry only · No online payment
         </div>
         {showPageLink && (
           <Link className="modal-link" href={`/fragrances/${perfume.slug}`}>

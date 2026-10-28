@@ -4,11 +4,9 @@ import Bottle from './Bottle';
 export default function SizeGuide() {
   return (
     <section className="pricing" id="pricing">
-      <div className="eyebrow">✦ LITTLE LUXURIES</div>
       <h2>
-        Luxury in <em>every size.</em>
+        Every <em>size.</em>
       </h2>
-      <p>Choose the perfect bottle for your lifestyle.</p>
       <div className="price-grid">
         {sizes.map((s, i) => (
           <div className={`price-item ${i === sizes.length - 1 ? 'price-highlight' : ''}`} key={s.ml}>
@@ -24,7 +22,6 @@ export default function SizeGuide() {
           </div>
         ))}
       </div>
-      <span className="pricing-footnote">Beautiful scents. Thoughtful prices. Made for every day.</span>
     </section>
   );
 }

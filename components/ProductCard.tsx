@@ -20,9 +20,6 @@ export default function ProductCard({ perfume: p, onSelect }: ProductCardProps) 
         <span className="visual-sheen" />
         <Bottle accent={p.accent} small />
       </button>
-      <div className="product-meta">
-        {p.category.toUpperCase()} · {p.family.toUpperCase()}
-      </div>
       <h3>{p.name}</h3>
       <p>{p.note}</p>
       <div className="product-bottom">

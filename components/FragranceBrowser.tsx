@@ -47,16 +47,12 @@ export default function FragranceBrowser() {
           </label>
         </div>
       </div>
-      <div className="result-count">
-        SHOWING {total} FRAGRANCE{total !== 1 ? 'S' : ''}
-      </div>
 
       {visible.map((s) => (
         <section className="collection" id={s.id} key={s.id}>
           <div className="collection-head">
-            <div className="eyebrow">✦ {s.label.toUpperCase()}</div>
             <h2>
-              Scents for <em>{s.pronoun}.</em>
+              For <em>{s.pronoun}.</em>
             </h2>
           </div>
           <ProductGrid perfumes={s.items} />

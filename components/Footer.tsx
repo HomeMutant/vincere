@@ -8,11 +8,6 @@ export default function Footer() {
       <div className="footer-main">
         <div>
           <div className="footer-brand">VINCERE</div>
-          <p>
-            Find your signature scent.
-            <br />
-            Premium fragrances for every you.
-          </p>
         </div>
         <div>
           <span>EXPLORE</span>
@@ -31,8 +26,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© 2026 VINCERE. ALL RIGHTS RESERVED.</span>
-        <span>SCENT YOUR STORY ✦</span>
+        <span>© 2026 VINCERE</span>
       </div>
     </footer>
   );

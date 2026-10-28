@@ -13,32 +13,20 @@ export default function SavedList() {
   return (
     <section className="catalogue">
       <div className="section-head">
-        <div>
-          <div className="eyebrow">✦ YOUR COLLECTION</div>
-          <h2>
-            Saved <em>fragrances.</em>
-          </h2>
-        </div>
-        <p>The scents you've hearted, kept on this device.</p>
+        <h2>
+          <em>Saved.</em>
+        </h2>
       </div>
 
       {loaded && saved.length === 0 && (
         <div className="empty">
           <Heart size={25} />
-          <h3>No saved fragrances yet</h3>
-          <p>Tap the heart on any fragrance to keep it here.</p>
+          <h3>Nothing saved yet</h3>
           <Link href="/fragrances">Browse fragrances</Link>
         </div>
       )}
 
-      {saved.length > 0 && (
-        <>
-          <div className="result-count">
-            {saved.length} SAVED FRAGRANCE{saved.length !== 1 ? 'S' : ''}
-          </div>
-          <ProductGrid perfumes={saved} />
-        </>
-      )}
+      {saved.length > 0 && <ProductGrid perfumes={saved} />}
     </section>
   );
 }

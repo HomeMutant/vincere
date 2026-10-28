@@ -1,12 +1,6 @@
 /* ---------- Page header ---------- */
 .catalogue { max-width: 1440px; margin: auto; padding: 70px 7% 125px; }
 .section-head { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 42px; }
-.section-head > p { max-width: 315px; color: #a99ba9; font-size: 13px; line-height: 1.9; }
-.catalogue-header { align-items: center; }
-.catalogue-header p { font-size: 13px; color: #aa9cab; }
-.price-from { border-left: 1px solid var(--line); padding: 0 0 0 30px; font-size: 9px; letter-spacing: 2px; color: #aa91a8; display: flex; flex-direction: column; gap: 6px; }
-.price-from strong { font: 500 43px 'Cormorant Garamond', serif; letter-spacing: -1px; color: #e8c5e1; }
-.price-from span { font-size: 9px; }
 
 /* ---------- Jump bar + filters (sticky) ---------- */
 .catalogue-tools { position: sticky; top: 0; z-index: 15; background: var(--bg); display: flex; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--line); align-items: end; }
@@ -20,7 +14,6 @@
 .search input::placeholder { color: #847585; }
 .select-wrap select { appearance: none; border: 0; outline: 0; background: transparent; color: #d6c4d5; font-size: 11px; min-width: 91px; cursor: pointer; }
 .select-wrap option { background: #201725; }
-.result-count { font-size: 9px; color: #947d92; letter-spacing: 2px; margin: 25px 0 0; }
 
 /* ---------- For him / For her sections ---------- */
 .collection { padding-top: 50px; scroll-margin-top: 60px; }
@@ -35,8 +28,7 @@
 .product-visual .bottle { margin-top: 38px; transform: rotate(-5deg) scale(.53); }
 .product-visual:hover .bottle { transform: rotate(0deg) scale(.59); }
 .product-visual .visual-sheen { position: absolute; inset: 0; background: linear-gradient(115deg, transparent 20%, #ffffff0a 45%, transparent 65%); }
-.product-meta { margin-top: 20px; color: #ca94c4; font-size: 9px; letter-spacing: 1.8px; }
-.product-card h3 { font: 500 25px 'Cormorant Garamond', serif; margin: 9px 0 3px; min-height: 29px; }
+.product-card h3 { font: 500 25px 'Cormorant Garamond', serif; margin: 20px 0 3px; min-height: 29px; }
 .product-card p { font-size: 11px; color: #928394; min-height: 27px; margin: 0; }
 .product-bottom { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; border-top: 1px solid var(--line); padding-top: 15px; }
 .product-bottom > div { display: flex; align-items: baseline; gap: 8px; }
@@ -64,8 +56,6 @@
 @media (max-width: 700px) {
   .catalogue { padding: 75px 6%; }
   .section-head { display: block; margin-bottom: 28px; }
-  .section-head > p { margin-top: 20px; }
-  .price-from { margin-top: 23px; padding-left: 20px; }
   .catalogue-tools { gap: 12px; }
   .tabs { gap: 20px; }
   .tabs a { font-size: 11px; }
@@ -79,7 +69,6 @@
   .product-visual:hover .bottle { transform: rotate(0) scale(.46); }
   .product-card h3 { font-size: 21px; }
   .product-card p { font-size: 10px; line-height: 1.6; min-height: 35px; }
-  .product-meta { font-size: 8px; }
   .product-bottom strong { font-size: 16px; }
   .view-btn { font-size: 10px; }
 }

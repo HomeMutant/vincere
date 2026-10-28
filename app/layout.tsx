@@ -3,7 +3,6 @@ import '../styles/base.css';
 import '../styles/bottle.css';
 import '../styles/header.css';
 import '../styles/hero.css';
-import '../styles/values.css';
 import '../styles/catalogue.css';
 import '../styles/modal.css';
 import '../styles/pricing.css';
@@ -23,7 +22,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body>
         <FavoritesProvider>
-          <div className="topline">COMPLIMENTARY SCENT DISCOVERY · FIND YOUR SIGNATURE</div>
           <Header />
           <main>{children}</main>
           <Footer />

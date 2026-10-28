@@ -1,5 +1,5 @@
 .pricing { text-align: center; padding: 100px 7% 105px; background: radial-gradient(ellipse at 50% 0%, #332038, #19121d 55%, #110e16); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.pricing > p { font-size: 13px; color: #aa97a7; margin: 17px 0 55px; }
+.pricing h2 { margin: 0 0 55px; }
 .price-grid { display: grid; grid-template-columns: repeat(5, 1fr); max-width: 950px; margin: auto; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .price-item { position: relative; padding: 17px 0 25px; border-right: 1px solid var(--line); display: flex; align-items: center; flex-direction: column; }
 .price-item:last-child { border: 0; }
@@ -9,7 +9,6 @@
 .price-item > strong span { font: 600 10px 'DM Sans', sans-serif; letter-spacing: 1px; margin-left: 3px; }
 .price-item > div:nth-of-type(2) { font: 500 25px 'Cormorant Garamond', serif; color: #e0b1da; margin-top: 7px; }
 .price-item small { position: absolute; top: -12px; background: #d5a5cd; color: #26182b; font-size: 8px; font-weight: 700; letter-spacing: 1px; padding: 5px 10px; }
-.pricing-footnote { display: block; font: italic 23px 'Cormorant Garamond', serif; color: #bd9cbb; margin-top: 30px; }
 
 @media (max-width: 700px) {
   .pricing { padding: 75px 5%; }

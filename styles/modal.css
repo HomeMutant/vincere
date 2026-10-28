@@ -9,12 +9,10 @@
 .modal-details { padding: 75px 42px 40px; }
 .modal-details h1, .modal-details h2 { font: 500 55px/1.05 'Cormorant Garamond', serif; margin: 23px 0 15px; }
 .modal-details > p { font-size: 13px; color: #b8a4b5; }
-.modal-label { margin-top: 48px; font-size: 10px; letter-spacing: 2px; color: #c9a3c6; }
-.size-options { display: flex; gap: 8px; margin-top: 15px; flex-wrap: wrap; }
+.size-options { display: flex; gap: 8px; margin-top: 40px; flex-wrap: wrap; }
 .size-options button { padding: 11px 12px; border: 1px solid var(--line); background: none; font-size: 12px; }
 .size-options button.selected { background: #d7a8d0; color: #261829; border-color: #d7a8d0; }
 .modal-price { margin: 30px 0; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 23px; }
-.modal-price span { color: #a18a9f; font-size: 10px; letter-spacing: 1.5px; }
 .modal-price strong { font: 500 39px 'Cormorant Garamond', serif; color: #eac1e4; }
 .modal-cta { width: 100%; gap: 14px; }
 .modal-note { margin-top: 18px; display: flex; gap: 8px; align-items: center; font-size: 10px; color: #a78fa2; }
@@ -34,7 +32,7 @@
   .modal-art .bottle { transform: rotate(-5deg) scale(.43); }
   .modal-details { padding: 28px 25px 35px; }
   .modal-details h1, .modal-details h2 { font-size: 39px; margin: 13px 0; }
-  .modal-label { margin-top: 25px; }
+  .size-options { margin-top: 25px; }
   .modal-price { margin: 22px 0; }
   .close-modal { top: 10px; right: 10px; }
   .detail-page { padding-top: 20px; }
